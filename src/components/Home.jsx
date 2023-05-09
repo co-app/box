@@ -46,7 +46,10 @@ const Home = () => {
           value: [...boxItems?.right?.value, item],
         },
       })
-    } else {
+      
+      return 
+    }
+    
       setBoxItems({
         left: {
           key: 'left',
@@ -57,7 +60,7 @@ const Home = () => {
           value: [...boxItems.right.value.filter((it) => it.tag !== item.tag)],
         },
       })
-    }
+    return 
   }
 
   // 1. delete selectedItem
